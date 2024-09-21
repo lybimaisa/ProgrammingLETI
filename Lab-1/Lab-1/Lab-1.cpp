@@ -18,15 +18,18 @@ int main(int argc, char* argv[])
 			if (y <= (-4 * x / 3))
 			{
 				std::wcout << L"Точка входит в треугольник." << std::endl;
+				std::cin >> x;
 			}
 			else
 			{
 				std::wcout << L"Точка не входит в треугольник." << std::endl;
+				std::cin >> x;
 			}
 		}
 		else
 		{
 			std::wcout << L"Точка не входит в треугольник." << std::endl;
+			std::cin >> x;
 		}
 	}
 	else
