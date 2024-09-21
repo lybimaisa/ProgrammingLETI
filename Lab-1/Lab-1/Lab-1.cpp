@@ -49,7 +49,6 @@ int main(int argc, char* argv[])
 			std::cout << "NO";
 		}
 	}
-	std::cin.get();
-	std::cin.get();
+	system("pause");
 	return 0;
 }
