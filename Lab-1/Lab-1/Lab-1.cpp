@@ -41,8 +41,7 @@ int main(int argc, char* argv[])
 			{
 				std::wcout << L"Точка не входит в треугольник." << std::endl;
 			}
-		}
-		while (x != 0 or y != 0);
+		} while (x != 0 or y != 0);
 		std::wcout << L"Конец программы." << std::endl;
 		system("pause");
 		return 0;
@@ -65,19 +64,18 @@ int main(int argc, char* argv[])
 			{
 				if (0 <= y && y <= (-4 * x / 3 + 4))
 				{
-					std::cout << "YES" << endl;
+					std::cout << "YES" << std::endl;
 				}
 				else
 				{
-					std::cout << "NO" << endl;
+					std::cout << "NO" << std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "NO" << endl;
+				std::cout << "NO" << std::endl;
 			}
-		}
-		while (x != 0 or y != 0);
+		} while (x != 0 or y != 0);
 	}
 	return 0;
 }
