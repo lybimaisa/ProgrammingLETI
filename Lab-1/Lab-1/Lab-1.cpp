@@ -65,16 +65,16 @@ int main(int argc, char* argv[])
 			{
 				if (0 <= y && y <= (-4 * x / 3 + 4))
 				{
-					std::cout << "YES";
+					std::cout << "YES" << endl;
 				}
 				else
 				{
-					std::cout << "NO";
+					std::cout << "NO" << endl;
 				}
 			}
 			else
 			{
-				std::cout << "NO";
+				std::cout << "NO" << endl;
 			}
 		}
 		while (x != 0 or y != 0);
