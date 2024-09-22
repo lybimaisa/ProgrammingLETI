@@ -10,45 +10,63 @@ int main(int argc, char* argv[])
 	if (isHuman)
 	{
 		double x, y;
-		setlocale(LC_ALL, "");
-		std::wcout << L"Введите координаты точки:" << std::endl;
-		std::cin >> x >> y;
-		if (0 <= x && x <= 3)
+		do
 		{
-			if (0 <= y && y <= (-4 * x / 3))
+			setlocale(LC_ALL, "");
+			std::wcout << L"Введите координаты точки:" << std::endl;
+			std::cin >> x >> y;
+			if (x == 0 and y == 0)
 			{
-				std::wcout << L"Точка входит в треугольник." << std::endl;
+				break;
+			}
+			if (0 <= x && x <= 3)
+			{
+				if (0 <= y && y <= (-4 * x / 3 + 4))
+				{
+					std::wcout << L"Точка входит в треугольник." << std::endl;
+				}
+				else
+				{
+					std::wcout << L"Точка не входит в треугольник." << std::endl;
+				}
 			}
 			else
 			{
 				std::wcout << L"Точка не входит в треугольник." << std::endl;
 			}
 		}
-		else
-		{
-			std::wcout << L"Точка не входит в треугольник." << std::endl;
-		}
+		while (x != 0 or y != 0);
+		std::wcout << L"Конец программы." << std::endl;
+		system("pause");
+		return 0;
 	}
 	else
 	{
 		double x, y;
-		std::cin >> x >> y;
-		if (0 <= x && x <= 3)
+		do
 		{
-			if (0 <= y && y <= (-4 * x / 3))
+			std::cin >> x >> y;
+			if (x == 0 and y == 0)
 			{
-				std::cout << "YES";
+				break;
+			}
+			if (0 <= x && x <= 3)
+			{
+				if (0 <= y && y <= (-4 * x / 3 + 4))
+				{
+					std::cout << "YES";
+				}
+				else
+				{
+					std::cout << "NO";
+				}
 			}
 			else
 			{
 				std::cout << "NO";
 			}
 		}
-		else
-		{
-			std::cout << "NO";
-		}
+		while (x != 0 or y != 0);
 	}
-	system("pause");
 	return 0;
 }
