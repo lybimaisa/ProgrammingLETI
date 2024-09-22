@@ -17,6 +17,11 @@ int main(int argc, char* argv[])
 		{
 			std::wcout << L"Введите координаты точки:" << std::endl;
 			std::cin >> x >> y;
+			if (!std::cin)
+			{
+				std::wcout << L"Введённые данные не являются числом." << std::endl;
+				break;
+			}
 			if (x == 0 and y == 0)
 			{
 				break;
@@ -48,6 +53,10 @@ int main(int argc, char* argv[])
 		do
 		{
 			std::cin >> x >> y;
+			if (!std::cin)
+			{
+				break;
+			}
 			if (x == 0 and y == 0)
 			{
 				break;
