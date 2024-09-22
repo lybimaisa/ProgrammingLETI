@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 		std::cin >> x >> y;
 		if (0 <= x && x <= 3)
 		{
-			if (y <= (-4 * x / 3))
+			if (0 <= y && y <= (-4 * x / 3))
 			{
 				std::wcout << L"Точка входит в треугольник." << std::endl;
 			}
@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 		std::cin >> x >> y;
 		if (0 <= x && x <= 3)
 		{
-			if (y <= (-4 * x / 3))
+			if (0 <= y && y <= (-4 * x / 3))
 			{
 				std::cout << "YES";
 			}
