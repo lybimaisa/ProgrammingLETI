@@ -10,9 +10,11 @@ int main(int argc, char* argv[])
 	if (isHuman)
 	{
 		double x, y;
+		setlocale(LC_ALL, "");
+		std::wcout << L"Дан треугольник с координатами вершин (0, 0) (3, 0) (0, 4)." << std::endl;
+		std::wcout << L"Чтобы проверить, находится ли точка в треугольнике, введите через пробел сначала координату оси x, а затем оси y." << std::endl;
 		do
 		{
-			setlocale(LC_ALL, "");
 			std::wcout << L"Введите координаты точки:" << std::endl;
 			std::cin >> x >> y;
 			if (x == 0 and y == 0)
