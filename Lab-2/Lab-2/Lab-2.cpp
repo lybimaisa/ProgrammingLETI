@@ -10,8 +10,8 @@ int main(int argc, char* argv[])
 	{
 		isHuman = true;
 	}
-	k1 = k2 = k3 = sum = max = a = b = c = 0;
-	min = 100000;
+	k1 = k2 = k3 = sum = max = 0;
+	min = a = b = 100000;
 	if (isHuman)
 	{
 		setlocale(LC_ALL, "");
@@ -101,5 +101,10 @@ int main(int argc, char* argv[])
 		std::wcout << L"Количество чисел, которые превышают сумму 2 предыдущих членов:" << std::endl;
 	}
 	std::cout << k3 << std::endl;
+	if (isHuman)
+	{
+		system("pause");
+	}
+	return 0;
 }
 
