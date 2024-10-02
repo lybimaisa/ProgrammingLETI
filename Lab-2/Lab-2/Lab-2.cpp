@@ -70,9 +70,12 @@ int main(int argc, char* argv[])
 		a = b;
 		b = c;
 		c = x;
-		if ((a + b) < c)
+		if (i >= 2)
 		{
-			k3++;
+			if ((a + b) < c)
+			{
+				k3++;
+			}
 		}
 	}
 	if (isHuman)
