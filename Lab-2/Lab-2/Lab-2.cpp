@@ -70,14 +70,14 @@ int main(int argc, char* argv[])
 		a = b;
 		b = c;
 		c = x;
-		if (i >= 2)
+		if (g >= 2)
 		{
 			if ((a + b) < c)
 			{
 				k3++;
 			}
 		}
-	}
+	} 
 	if (isHuman)
 	{
 		std::wcout << L"Среднее арифмитическое чисел:" << std::endl;
