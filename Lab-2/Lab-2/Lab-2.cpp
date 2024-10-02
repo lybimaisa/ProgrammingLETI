@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 		isHuman = true;
 	}
 	k1 = k2 = k3 = sum = max = 0;
-	min = a = b = 100000;
+	min = 100000000000;
 	if (isHuman)
 	{
 		setlocale(LC_ALL, "");
