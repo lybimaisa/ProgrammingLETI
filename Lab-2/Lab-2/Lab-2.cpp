@@ -10,8 +10,6 @@ int main(int argc, char* argv[])
 	{
 		isHuman = true;
 	}
-	k1 = k2 = k3 = sum = max = 0;
-	min = 100000000000;
 	if (isHuman)
 	{
 		setlocale(LC_ALL, "");
@@ -25,16 +23,28 @@ int main(int argc, char* argv[])
 			std::wcout << g+1 << L" число:" << std::endl;
 		}
 		std::cin >> x;
-		k = 0;
-		for (j = 2; j <= sqrt(x); j++)
+		if (g == 0)
 		{
-			if (x % j == 0)
+			min = x;
+		}
+		k = 0;
+		if (x % 2 != 0)
+		{
+			int sqr = sqrt(x);
+			for (j = 3; j <= sqr; j+=2)
 			{
-				k++;
-				break;
+				if (x % j == 0)
+				{
+					k++;
+					break;
+				}
 			}
 		}
-		if (k == 0 and x != 1)
+		else
+		{
+			k++;
+		}
+		if (k == 0 and x != 1 or x == 2)
 		{
 			if (isHuman)
 			{
