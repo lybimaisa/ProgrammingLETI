@@ -156,9 +156,12 @@ int main(int argc, const char* argv[])
             {
                 if (isHuman)
                 {
-                    cout << "Невозможно возвести матрицу в степень.";
+                    cout << "Невозможно возвести матрицу в степень." << endl;
                 }
-                cout << "NO" << endl;
+                else
+                {
+                    cout << "NO" << endl;
+                }
             }
             else 
             {
