@@ -150,8 +150,14 @@ int main(int argc, const char* argv[])
             M = K;
             DeleteMatrix(A2, M);
         }
-        else if (command == 3) {
-            if (N != M) {
+        else if (command == 3) 
+        {
+            if (N != M) 
+            {
+                if (isHuman)
+                {
+                    cout << "Невозможно возвести матрицу в степень.";
+                }
                 cout << "NO" << endl;
             }
             else 
