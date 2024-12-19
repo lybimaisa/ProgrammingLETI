@@ -95,7 +95,7 @@ void SortHighStudents(Student* members, int n)
         {
             Student temp = members[i];
             int j;
-            for (j = i; j >= k and members[j - k].group < temp.group; j -= k)
+            for (j = i; j >= k and members[j - k].CoolGrade() < temp.CoolGrade(); j -= k)
             {
                 members[j] = members[j - k];
             }
@@ -144,7 +144,7 @@ void SortSumStudents(Summary* members, int n)
         {
             Summary temp = members[i];
             int j;
-            for (j = i; j >= k and members[j - k].group < temp.group; j -= k)
+            for (j = i; j >= k and members[j - k].BadGradeSum < temp.BadGradeSum; j -= k)
             {
                 members[j] = members[j - k];
             }
