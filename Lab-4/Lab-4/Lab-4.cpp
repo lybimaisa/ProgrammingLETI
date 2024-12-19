@@ -83,7 +83,8 @@ double** MultiplyMatrices(double** A1, double** A2, size_t rows, size_t cols, si
     return result;
 }
 
-double** PowerMatrix(double** matrix, int x, size_t N) {
+double** PowerMatrix(double** matrix, int x, size_t N) 
+{
     if (x == 0) 
     {
         return CreateIdentityMatrix(N);

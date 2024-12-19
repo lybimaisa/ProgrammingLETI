@@ -273,4 +273,3 @@ int main(int argc, const char* argv[])
     delete[] sum;
     return 0;
 }
-
