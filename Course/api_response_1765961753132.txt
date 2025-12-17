@@ -1,0 +1,1 @@
+[  {    "contactId": 2,    "fullName": "Петров Николай Иванович",    "relation": "отец",    "birthDate": "1960-01-10",    "approved": true  },  {    "contactId": 1,    "fullName": "Петрова Анна Сергеевна",    "relation": "жена",    "birthDate": "1987-05-20",    "approved": true  }]
